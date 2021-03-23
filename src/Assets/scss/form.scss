@@ -1,0 +1,227 @@
+.container{
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 25px;
+
+    .error{
+      font-size: 11px;
+      width: 100%;
+      padding-left: 55px;
+      color: $red;
+    }
+
+    .addForm{
+      width: 70%;
+    }
+
+    input[type=text], input[type=number], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    
+    span {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      //background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    .col-25 {
+      float: left;
+      width: 50%;
+      margin-top: 6px;
+
+      @media(max-width:425px){
+        width: 35%!important; 
+        font-size: 14px;
+      }
+    }
+    
+    .col-75 {
+      float: left;
+      width: 50%;
+      margin-top: 6px;
+      @media(max-width:425px){
+        width: 65%!important; 
+      }
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    @media(max-width: 425px){
+      .row__submit{
+        padding-left: 115px;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+  }
+
+
+  //edit page
+  .submi{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+
+  .parentEdited{
+    height: 800px;
+    overflow: scroll;
+  }
+  .edited{
+    padding: 30px 50px;
+
+    @media(max-width:425px){
+      padding: 30px 20px;
+    }
+
+    &__row{
+      background-color: #eee;
+      margin-bottom: 10px;
+      .skylight-dialog{
+        overflow: scroll;
+        .editForm{
+                     .row{
+                       display: flex;
+                       padding-bottom: 10px;
+           
+                       @media(max-width:425px){
+                         display: block;
+                       }
+                       
+                       &__input{
+                         width: 50%;
+                         padding-left: 10px;
+           
+                         select,textarea, input{
+                           padding: 3px;
+                           border: 1px solid #ccc;
+                           border-radius: 4px;
+                           width: 80%;
+           
+                           @media(max-width:425px){
+                             width: 200%;
+                           }
+           
+                         }
+                       }
+           
+                       &__first{
+                         display: flex;
+                         width: 50%;
+                       }
+           
+                       &__second{
+                         display: flex;
+                         width: 50%;
+                       }
+                     }
+        }
+      }
+      @media(max-width:2560px){
+        .skylight-dialog{
+          min-height: 0px !important;
+        }
+      }
+      @media(max-width:1440px){
+        .skylight-dialog{
+          top: 55% !important;
+        }
+      }
+
+      @media(max-width:1024px){
+        .skylight-dialog{
+          top: 70% !important;
+        }
+      }
+    }
+    
+    &__group{
+      display: flex;
+    }
+
+    &__icon{
+      padding-top: 65px; 
+      i{
+        padding: 5px;
+        background: red;
+        border-radius: 10px;
+      }
+
+      @media (max-width:425px) {
+        padding-top: 50px;
+      }
+    }
+
+    &__product{
+      width: 90%;
+      margin: 20px 5px;
+      display: flex;
+     // border: 1px solid $white;
+      img{
+        width: 350px;
+        height: 200px;
+
+        @media(max-width:425px){
+          width: 80px;
+          height: 125px
+        }
+      }
+
+      span{
+        padding-top: 5%;
+        width: 42%;
+        margin-left: 10px;
+
+
+        @media(max-width:425px){
+          padding-top: 10%;
+          font-size: 10px;  
+        }
+      }
+
+      &:hover{
+        background-color: #5b7a93;
+        color: white;
+      }
+    }
+  }
+  
+  

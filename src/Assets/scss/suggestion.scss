@@ -1,0 +1,36 @@
+.suggest{
+    width : 100%;
+    &__header{
+        padding-top: 5%;
+        width: 30%;
+        margin-left: 10px;
+
+
+        @media(max-width:425px){
+          padding-top: 10%;
+          font-size: 10px;  
+        }
+    }
+    &__subject{
+        padding-top: 5%;
+        width: 70%;
+        margin-left: 10px;
+
+
+        @media(max-width:425px){
+          padding-top: 10%;
+          font-size: 10px;  
+        }
+    }
+    &__product{
+        width: 90%;
+        margin: 20px 5px;
+        display: flex;
+        text-align: left;
+  
+        &:hover{
+          background-color: $white;
+          color: white;
+        }
+      }
+}

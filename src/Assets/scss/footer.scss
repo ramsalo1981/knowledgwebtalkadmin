@@ -1,0 +1,109 @@
+.container{
+  display: flex;
+}
+.text-right{
+  width: 50%;
+  margin-right: 50px;
+
+  &__content{
+    float: right;
+    
+    @media (max-width:425px) {
+      .fa-3x{
+        font-size: 2em!important;
+      }
+    }
+  }
+
+  @media (max-width:768px) {
+    margin-right: 20px;
+  }
+  @media (max-width:425px) {
+    margin-right: 10px;
+  }
+}
+
+.text-left{
+  width: 50%;
+  color: $white;
+  margin-left: 50px;
+  .location{
+    display: flex;
+
+    span{
+      padding: 5px 0 0 10px;
+      @media (max-width:425px) {
+        padding: 5px 0 0 0;
+      } 
+    }
+
+    #social-map{
+      font-size: 30px;
+    }
+  }
+
+  .telefone{
+    display: flex;
+    padding-top: 10px;
+
+    span{
+      padding: 5px 0 0 10px;
+    }
+
+    #social-phone{
+      font-size: 30px;
+    }
+  }
+  @media (max-width:768px) {
+    margin-left: 20px;
+  }
+  @media (max-width:425px) {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+}
+
+#lab_social_icon_footer {
+  padding: 40px 0;
+  background-color: #5b7a93;
+}
+
+#lab_social_icon_footer a {
+  color: $white;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
+}

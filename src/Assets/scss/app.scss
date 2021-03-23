@@ -1,0 +1,21 @@
+.App{
+  &__admin{
+    min-height: 900px;
+  }
+  &__home{
+    //padding-bottom: 20px;
+    min-height: 600px;
+    @media(max-width: 1440px){
+      min-height: 615px;
+    }
+    @media(max-width: 1024px){
+      min-height: 0;
+    }
+  }
+}
+.App-header {
+    background-color: black;
+    height: 120px;
+    padding: 10px;
+    color: white;
+  }

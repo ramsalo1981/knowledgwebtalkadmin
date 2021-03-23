@@ -1,0 +1,75 @@
+.brands{
+    text-align: center;
+    overflow: scroll;
+    height: 420px;
+    @media(max-width: 1440px){
+        height: 435px;
+      }
+    
+    @media(max-width: 1024px){
+        height: 100%;
+      }
+    &__paddings{
+        padding-bottom: 20px;
+
+    }
+    &__marks{
+        overflow-wrap: break-word;
+        span{
+            padding: 0 5px;
+            &:hover{
+                cursor: pointer;
+                color: $white;
+            }
+        }
+    }
+    &__char{
+        color: $white;
+    }
+}
+.home__image{
+    text-align: center;
+    height: 420px;
+    @media(max-width: 1440px){
+        height: 435px;
+      }
+    
+    @media(max-width: 1024px){
+        height: 100%;
+      }
+    &__paddings{
+        padding-bottom: 20px;
+
+    }
+    &__marks{
+        overflow-wrap: break-word;
+        span{
+            padding: 0 5px;
+            &:hover{
+                cursor: pointer;
+                color: $white;
+            }
+        }
+    }
+    &__char{
+        color: $white;
+    }
+}
+
+.brandOne{
+    text-align: left;
+    &__center{
+        text-align: center;
+    }
+    
+    &__back{
+        font-size: 35px;
+        margin: 1% 1% 1% 10%;
+        cursor: pointer;
+        padding: 10px;
+
+        &:hover{
+            color: $white;
+        }
+    }
+}
