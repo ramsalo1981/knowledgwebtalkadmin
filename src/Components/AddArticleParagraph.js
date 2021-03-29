@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 
+
 class Add extends Component {
   _isMounted = false;
   constructor() {
@@ -139,6 +140,7 @@ class Add extends Component {
               <div className="col-75">
                 <textarea type="text" id="content" name="content" placeholder="Content.." autoComplete='false' value={this.state.content} onChange={this.handleContent} />
               </div>
+              
             </div>
             <div className="row">
               <div className="col-25">

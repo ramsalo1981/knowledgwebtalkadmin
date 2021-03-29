@@ -10,6 +10,7 @@ class Edit extends Component {
       Articles: [],
       Categories: [],
       categoryId: "",
+      articleId: ""
     };
     this.handleCatogId = this.handleCatogId.bind(this);
     this.handleCtodId = this.handleCtodId.bind(this);
@@ -32,13 +33,14 @@ class Edit extends Component {
   }
 
   handleCtodId(e) {
+    console.log(e.target.value);
     this.setState({articleId: e.target.value});
-    this.setState({Paragraphes: this.state.Articles[e.target.value - 1].articleParagraphs});
-    console.log(this.state.Articles[e.target.value - 1].articleParagraphs);
+    this.setState({Paragraphes: this.state.Articles[e.target.value].articleParagraphs});
 
   }
 
   render() {
+    var i = 0;
     const renderProducts = 
             <div className="edited">
               <div className="row">
@@ -60,9 +62,9 @@ class Edit extends Component {
                 </div>
                 <div className="col-75">
                   <select id="articleId" name="articleId" onChange={this.handleCtodId} value={this.state.articleId} >
-                    <option value="0">Select Article</option>
-                  {this.state.Articles.map(article => 
-                    <option key={article.articleId} value={article.articleId}>{article.articleTitle}</option>
+                    <option value="-1">Select Article</option>
+                  {this.state.Articles.map((article, i) => 
+                    <option key={i} value={i}>{article.articleTitle}</option>
                   )}
                   </select>                
                 </div>

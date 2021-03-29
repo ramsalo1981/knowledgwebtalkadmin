@@ -116,7 +116,7 @@ class Edited_popup extends React.Component {
           backgroundColor: 'white',
           width: '90%',
           height: '300px',
-          marginTop: '-330px',
+          marginTop: '-265px',
           marginLeft: '-23%',
           top: '55%',
           left: '27%',
