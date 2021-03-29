@@ -111,7 +111,8 @@ class Edited_popup extends React.Component {
               <div className="edited__group">
                     <div className="edited__product" onClick={() => {this.customDialog.show(); this.setState({Id : paragraph.articleParagraphId})}}>
                         <img src={paragraph.articleParagraphImageSrc} alt="Product to show"/>
-                        <span>{paragraph.articleParagraphTitle}</span>
+                        <h1>{paragraph.articleParagraphTitle}</h1>
+                        <span className="text-content">{paragraph.content}</span>
                     </div>
                     <div onClick={this.handleDelete.bind(this, paragraph.articleParagraphId)} className="edited__icon"><i id="trash-icon" className="fa fa-trash-o fa-3x social"></i></div>
               </div>
