@@ -30,7 +30,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://localhost:44375/",
+  "proxy": "https://knowledgeappapiserver.azurewebsites.net/",
   "browserslist": [
     ">0.2%",
     "not dead",
